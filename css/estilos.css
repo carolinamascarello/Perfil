@@ -1,0 +1,61 @@
+                  @font-face {
+    font-family: Carolina;
+    src: url("static/Lora-Italic.ttf");
+}
+:root {
+    --cor-fundo:#ffc2cd;
+    --cor-título:#ff084a;
+    --cor-paragrafo:#222;
+    --cor-link:#fc3468;
+    --fonte: Carolina
+}
+
+body{
+    background-color:var(--cor-fundo); 
+    font-family: var(--fonte);
+    width: 300px;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+    color:var(--cor-título);
+}
+
+p {
+    color:var(--cor-paragrafo);
+}
+
+ul li a {
+    color:var(--cor-link);
+}
+
+/*<div class="imagem"> */
+div.imagem {
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li::before {
+    content: "\2665";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #D60F6D; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+img {
+    border-radius: 20%;
+    border-color: #EF0E57;
+    border-width: 8px;
+    border-style: solid;
+
+}
